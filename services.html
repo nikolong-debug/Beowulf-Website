@@ -1,0 +1,263 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Beowulf | Services</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: #17130f;
+            color: #f1dfb5;
+            font-family: Georgia, "Times New Roman", serif;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #0b0907;
+            text-align: center;
+            padding: 35px 20px 20px;
+            border-bottom: 3px solid #b68b3c;
+        }
+
+            header h1 {
+                margin: 0;
+                color: #d5a94f;
+                font-size: 50px;
+                letter-spacing: 7px;
+            }
+
+            header p {
+                margin: 5px 0 25px;
+                font-size: 20px;
+                letter-spacing: 5px;
+            }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+            nav a {
+                color: #f1dfb5;
+                text-decoration: none;
+                padding: 10px 15px;
+                background: #211a13;
+                border: 1px solid #8b682d;
+            }
+
+                nav a:hover {
+                    background: #b68b3c;
+                    color: #17130f;
+                }
+
+        main {
+            padding: 40px 20px;
+        }
+
+        .title {
+            text-align: center;
+            max-width: 900px;
+            margin: auto;
+        }
+
+            .title h2 {
+                color: #d5a94f;
+                font-size: 45px;
+                letter-spacing: 5px;
+            }
+
+        .services {
+            max-width: 1000px;
+            margin: 50px auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .service {
+            background: #211a13;
+            border: 2px solid #8b682d;
+            padding: 30px;
+        }
+
+            .service h2 {
+                color: #d5a94f;
+            }
+
+        .evidence {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 35px;
+            background: #211a13;
+            border: 2px solid #b68b3c;
+        }
+
+            .evidence h2 {
+                color: #d5a94f;
+            }
+
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 30px;
+            background: #8b682d;
+            border: 2px solid #d5a94f;
+            color: #f1dfb5;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer {
+            background: #0b0907;
+            border-top: 3px solid #b68b3c;
+            text-align: center;
+            padding: 30px;
+            color: #a88f64;
+        }
+
+        @media (max-width: 700px) {
+            .services {
+                grid-template-columns: 1fr;
+            }
+
+            nav {
+                flex-direction: column;
+            }
+
+                nav a {
+                    width: 100%;
+                }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <h1>BEOWULF</h1>
+
+        <p>HERO FOR HIRE</p>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="why-beowulf.html">Why Beowulf?</a>
+            <a href="victories.html">Victories</a>
+            <a href="anglo-saxon.html">Anglo-Saxon Values</a>
+            <a href="contact.html">Hire Beowulf</a>
+            <a href="sources.html">Sources</a>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="title">
+
+            <h2>HEROIC SERVICES</h2>
+
+            <p>
+                Beowulf offers protection to kingdoms and communities
+                facing dangerous threats.
+            </p>
+
+        </section>
+
+
+        <section class="services">
+
+            <div class="service">
+
+                <h2>MONSTER HUNTING</h2>
+
+                <p>
+                    Beowulf has experience fighting monsters.
+                    He defeated Grendel and later fought Grendel's mother.
+                </p>
+
+            </div>
+
+
+            <div class="service">
+
+                <h2>COMMUNITY DEFENSE</h2>
+
+                <p>
+                    Beowulf protects people who are being threatened.
+                    His actions in Heorot show his willingness to defend others.
+                </p>
+
+            </div>
+
+
+            <div class="service">
+
+                <h2>KINGDOM PROTECTION</h2>
+
+                <p>
+                    Beowulf eventually becomes king and takes responsibility
+                    for protecting his people.
+                </p>
+
+            </div>
+
+
+            <div class="service">
+
+                <h2>DRAGON DEFENSE</h2>
+
+                <p>
+                    Beowulf faces a dragon threatening his kingdom,
+                    showing that he continues to protect his people.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <section class="evidence">
+
+            <h2>PROVEN EXPERIENCE</h2>
+
+            <p>
+                Beowulf's services are supported by his actions throughout
+                the epic poem. He travels to help Hrothgar, defeats Grendel,
+                defeats Grendel's mother, and later faces a dragon as king.
+            </p>
+
+            <p>
+                These accomplishments demonstrate the courage, strength,
+                loyalty, and responsibility expected of an Anglo-Saxon hero.
+            </p>
+
+            <a href="contact.html" class="button">
+                HIRE BEOWULF
+            </a>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+            Beowulf: Hero for Hire |
+            An Anglo-Saxon Warrior Advertisement
+        </p>
+
+    </footer>
+
+</body>
+</html>

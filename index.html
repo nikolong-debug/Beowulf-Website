@@ -1,0 +1,375 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Beowulf | Hero for Hire</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: #17130f;
+            color: #f1dfb5;
+            font-family: Georgia, "Times New Roman", serif;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #0b0907;
+            text-align: center;
+            padding: 35px 20px 20px;
+            border-bottom: 3px solid #b68b3c;
+        }
+
+            header h1 {
+                margin: 0;
+                color: #d5a94f;
+                font-size: 50px;
+                letter-spacing: 7px;
+                text-shadow: 3px 3px 5px #000;
+            }
+
+            header p {
+                margin: 5px 0 25px;
+                font-size: 20px;
+                letter-spacing: 5px;
+            }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+            nav a {
+                color: #f1dfb5;
+                text-decoration: none;
+                padding: 10px 15px;
+                background: #211a13;
+                border: 1px solid #8b682d;
+                transition: 0.3s;
+            }
+
+                nav a:hover {
+                    background: #b68b3c;
+                    color: #17130f;
+                }
+
+        main {
+            padding: 30px 20px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+            .hero h2 {
+                color: #d5a94f;
+                font-size: 45px;
+                letter-spacing: 4px;
+            }
+
+            .hero p {
+                font-size: 20px;
+            }
+
+            .hero img {
+                width: 100%;
+                max-width: 750px;
+                margin-top: 25px;
+                border: 3px solid #b68b3c;
+                box-shadow: 0 0 25px #000;
+            }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            max-width: 1000px;
+            margin: 50px auto;
+        }
+
+        .card {
+            background: #211a13;
+            border: 2px solid #8b682d;
+            padding: 25px;
+            text-align: center;
+        }
+
+            .card img {
+                width: 100%;
+                height: 250px;
+                object-fit: cover;
+                border: 2px solid #b68b3c;
+            }
+
+            .card h2 {
+                color: #d5a94f;
+            }
+
+        .qualities {
+            max-width: 1000px;
+            margin: 60px auto;
+        }
+
+            .qualities h2,
+            .video-section h2 {
+                text-align: center;
+                color: #d5a94f;
+                font-size: 32px;
+                letter-spacing: 4px;
+            }
+
+        .quality-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+        }
+
+        .quality {
+            background: #211a13;
+            border: 1px solid #8b682d;
+            padding: 20px;
+            text-align: center;
+        }
+
+            .quality h3 {
+                color: #d5a94f;
+            }
+
+        .video-section {
+            max-width: 900px;
+            margin: 60px auto;
+            padding: 35px;
+            background: #211a13;
+            border: 2px solid #8b682d;
+            text-align: center;
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            margin: 25px auto 0;
+            aspect-ratio: 16 / 9;
+        }
+
+            .video-container iframe {
+                width: 100%;
+                height: 100%;
+                border: 2px solid #b68b3c;
+            }
+
+        .cta {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+            .cta h2 {
+                color: #d5a94f;
+                font-size: 38px;
+            }
+
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            background: #8b682d;
+            border: 2px solid #d5a94f;
+            color: #f1dfb5;
+            text-decoration: none;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+            .button:hover {
+                background: #d5a94f;
+                color: #17130f;
+            }
+
+        footer {
+            background: #0b0907;
+            border-top: 3px solid #b68b3c;
+            text-align: center;
+            padding: 30px;
+            color: #a88f64;
+        }
+
+        @media (max-width: 750px) {
+            .cards,
+            .quality-grid {
+                grid-template-columns: 1fr;
+            }
+
+            nav {
+                flex-direction: column;
+            }
+
+                nav a {
+                    width: 100%;
+                }
+
+            .hero h2 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <h1>BEOWULF</h1>
+
+        <p>HERO FOR HIRE</p>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="why-beowulf.html">Why Beowulf?</a>
+            <a href="victories.html">Victories</a>
+            <a href="anglo-saxon.html">Anglo-Saxon Values</a>
+            <a href="contact.html">Hire Beowulf</a>
+            <a href="sources.html">Sources</a>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="hero">
+
+            <h2>WHO WILL PROTECT YOUR KINGDOM?</h2>
+
+            <p>
+                When monsters threaten your people, call the warrior
+                who has already faced them.
+            </p>
+
+            <img src="images/beowulf.jpg" alt="Beowulf">
+
+        </section>
+
+
+        <section class="cards">
+
+            <div class="card">
+
+                <img src="images/grendel.jpg" alt="Beowulf fighting Grendel">
+
+                <h2>MONSTER HUNTER</h2>
+
+                <p>
+                    Beowulf defeated Grendel and protected the people
+                    of Heorot from a dangerous threat.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <img src="images/dragon.jpg" alt="Beowulf fighting the dragon">
+
+                <h2>DRAGON SLAYER</h2>
+
+                <p>
+                    Even as an older king, Beowulf faced a dragon
+                    threatening his people.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <section class="qualities">
+
+            <h2>WHY HIRE BEOWULF?</h2>
+
+            <div class="quality-grid">
+
+                <div class="quality">
+                    <h3>COURAGE</h3>
+                    <p>He faces dangerous enemies instead of running from them.</p>
+                </div>
+
+                <div class="quality">
+                    <h3>STRENGTH</h3>
+                    <p>His incredible physical strength helps him defeat powerful enemies.</p>
+                </div>
+
+                <div class="quality">
+                    <h3>LOYALTY</h3>
+                    <p>He risks himself to protect other people.</p>
+                </div>
+
+                <div class="quality">
+                    <h3>HONOR</h3>
+                    <p>He seeks to earn respect through heroic actions.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="video-section">
+
+            <h2>LEARN THE LEGEND</h2>
+
+            <p>
+                Watch this educational video to learn more about
+                Beowulf, Grendel, and the epic poem.
+            </p>
+
+            <div class="video-container">
+
+                <iframe src="https://www.youtube.com/embed/KljiHq-pNkU"
+                        title="Beowulf Educational Video"
+                        allowfullscreen>
+                </iframe>
+
+            </div>
+
+        </section>
+
+
+        <section class="cta">
+
+            <h2>YOUR KINGDOM NEEDS A HERO.</h2>
+
+            <p>
+                Beowulf has the courage, strength, and experience
+                to defend your people.
+            </p>
+
+            <a href="contact.html" class="button">
+                HIRE BEOWULF
+            </a>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+            Beowulf: Hero for Hire |
+            An Anglo-Saxon Warrior Advertisement
+        </p>
+
+    </footer>
+
+</body>
+</html>
